@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "BikeStation",
+  "namespace": "tfl.bike",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "name", "type": "string"},
+    {"name": "bikes", "type": "int"},
+    {"name": "empty_docks", "type": "int"},
+    {"name": "total_docks", "type": "int"}
+  ]
+}
