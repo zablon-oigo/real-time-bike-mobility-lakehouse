@@ -5,9 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "attrs>=25.4.0",
+    "authlib>=1.6.8",
+    "cachetools>=7.0.1",
     "confluent-kafka>=2.13.0",
     "duckdb>=1.4.4",
     "fastavro>=1.12.1",
     "httpx>=0.28.1",
+    "plotly>=6.5.2",
+    "streamlit>=1.22.0",
     "yq>=3.4.3",
 ]
