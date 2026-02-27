@@ -1,0 +1,21 @@
+{
+  "name": "bike-hire-iceberg-sink",
+  "connector.class": "io.confluent.connect.file.FileStreamSinkConnector",
+  "tasks.max": "1",
+  "topics": "bike.hire",
+  
+  "key.converter": "io.confluent.connect.avro.AvroConverter",
+  "key.converter.schema.registry.url": "http://localhost:8081",
+  
+  "value.converter": "io.confluent.connect.avro.AvroConverter",
+  "value.converter.schema.registry.url": "http://localhost:8081",
+
+  "file": "/data/bike_hire_iceberg/bike_hire_sink.parquet",  
+  "format.class": "io.confluent.connect.parquet.ParquetFormat",  
+
+  "flush.size": "1000",                   
+
+  "errors.tolerance": "all",
+  "errors.log.enable": "true",
+  "errors.log.include.messages": "true"
+}
