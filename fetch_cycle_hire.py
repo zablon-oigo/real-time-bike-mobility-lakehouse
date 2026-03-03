@@ -22,3 +22,9 @@ sr_client = SchemaRegistryClient({"url": SCHEMA_REG_URL})
 def dict_to_avro(obj, ctx):
     return obj
 
+# Create Avro serializer
+avro_serializer = AvroSerializer(
+    schema_registry_client=sr_client,
+    schema_str=schema_str,
+    to_dict=dict_to_avro
+)
