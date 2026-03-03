@@ -28,3 +28,11 @@ avro_serializer = AvroSerializer(
     schema_str=schema_str,
     to_dict=dict_to_avro
 )
+
+# Create Serializing Producer
+producer = SerializingProducer({
+    "bootstrap.servers": "localhost:9097,localhost:9095,localhost:9102",
+    "key.serializer": StringSerializer("utf_8"),
+    "value.serializer": avro_serializer
+})
+
