@@ -16,4 +16,9 @@ with open("schema.avro", "r") as f:
     schema_str = f.read()
 
 
+# Create Schema Registry client
+sr_client = SchemaRegistryClient({"url": SCHEMA_REG_URL})
+
+def dict_to_avro(obj, ctx):
+    return obj
 
