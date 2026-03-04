@@ -36,3 +36,10 @@ producer = SerializingProducer({
     "value.serializer": avro_serializer
 })
 
+
+def fetch_live_bike_hire():
+    try:
+        response = httpx.get(BASE_URL, timeout=10.0)
+        response.raise_for_status()
+
+        root = ET.fromstring(response.text)
