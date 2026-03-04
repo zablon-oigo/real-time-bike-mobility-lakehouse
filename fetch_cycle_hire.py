@@ -43,3 +43,13 @@ def fetch_live_bike_hire():
         response.raise_for_status()
 
         root = ET.fromstring(response.text)
+        stations = []
+        for station in root.findall(".//station"):
+            stations.append({
+                "id": station.findtext("id"),
+                "name": station.findtext("name"),
+                "bikes": int(station.findtext("nbBikes")),
+                "empty_docks": int(station.findtext("nbEmptyDocks")),
+                "total_docks": int(station.findtext("nbDocks")),
+            })
+
