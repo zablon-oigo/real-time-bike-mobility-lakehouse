@@ -60,3 +60,10 @@ def fetch_live_bike_hire():
         logging.error(f"Error fetching data: {e}")
         return []
     
+def delivery_report(err, msg):
+    if err:
+        logging.error(f"Delivery failed: {err}")
+    else:
+        logging.info(f"Message delivered to {msg.topic()} [{msg.partition()}]")
+
+
