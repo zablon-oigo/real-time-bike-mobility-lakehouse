@@ -53,3 +53,10 @@ def fetch_live_bike_hire():
                 "total_docks": int(station.findtext("nbDocks")),
             })
 
+        logging.info(f"Fetched {len(stations)} stations")
+        return stations
+
+    except Exception as e:
+        logging.error(f"Error fetching data: {e}")
+        return []
+    
