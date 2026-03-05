@@ -67,3 +67,14 @@ def delivery_report(err, msg):
         logging.info(f"Message delivered to {msg.topic()} [{msg.partition()}]")
 
 
+def send_to_kafka(data):
+    for station in data:
+        producer.produce(
+            topic=TOPIC,
+            key=str(station["id"]),
+            value=station,
+            on_delivery=delivery_report
+        )
+        producer.poll(0)
+
+    producer.flush()
