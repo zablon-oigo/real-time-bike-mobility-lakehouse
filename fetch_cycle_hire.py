@@ -78,3 +78,10 @@ def send_to_kafka(data):
         producer.poll(0)
 
     producer.flush()
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+
+    stations = fetch_live_bike_hire()
+    if stations:
+        send_to_kafka(stations)
