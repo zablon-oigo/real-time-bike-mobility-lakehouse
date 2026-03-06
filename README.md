@@ -12,6 +12,21 @@ This project showcases a modern event-driven streaming architecture.
 
 #### Technology Stack
 
+
+Before running the project , ensure you have the following installed:
+
+|  Tool | Version  | Purpose  |
+|---|---|---|
+|  Java |  17+ |  Runtime for Kafka |
+|  Python | 3.9+  | Running script   |
+|  Kafka | 4.0.0+  | Distributed Event Streaming   |
+|  Schema Registry |  Latest |  Schema Management |
+|  Streamlit | Latest  | Dashboard  |
+|  httpie | Latest  | API Testing   |
+|  Uv | Latest  | Python Package Management   |
+
+
+
 #### Setup Guide
 
 
