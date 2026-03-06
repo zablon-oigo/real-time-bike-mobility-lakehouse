@@ -22,6 +22,7 @@ Before running the project , ensure you have the following installed:
 |  Kafka | 4.0.0+  | Distributed Event Streaming   |
 |  Schema Registry |  Latest |  Schema Management |
 |  Streamlit | Latest  | Dashboard  |
+|  KsqlDB | Latest  | Stream Processing   |
 |  httpie | Latest  | API Testing   |
 |  Uv | Latest  | Python Package Management   |
 
