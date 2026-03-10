@@ -8,6 +8,7 @@ This project showcases a modern event-driven streaming architecture.
 
 
 #### Architecture Diagram
+<img width="1601" height="381" alt="bike" src="https://github.com/user-attachments/assets/b1c243a2-c2cf-48d5-88d0-d944b5be56e1" />
 
 
 #### Technology Stack
