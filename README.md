@@ -1,4 +1,4 @@
-### Bike Mobility
+### Bike Mobility Analytics
 
 This project demonstrates a real-time bike mobility analytics pipeline using live bike hire data from London.
 
@@ -8,7 +8,8 @@ This project showcases a modern event-driven streaming architecture.
 
 
 #### Architecture Diagram
-<img width="1601" height="381" alt="bike" src="https://github.com/user-attachments/assets/b1c243a2-c2cf-48d5-88d0-d944b5be56e1" />
+
+<img width="1601" height="381" alt="biket drawio" src="https://github.com/user-attachments/assets/a1bc52d5-a3a1-4809-b741-5445c1d8f160" />
 
 
 #### Technology Stack
